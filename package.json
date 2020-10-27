@@ -1,0 +1,19 @@
+{
+  "name": "the-skilled-bots",
+  "version": "1.0.0",
+  "description": "Static Website made with HTML5 and CSS3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mankhedekar96/the-skilled-bots.git"
+  },
+  "author": "Manish Khedekar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mankhedekar96/the-skilled-bots/issues"
+  },
+  "homepage": "https://github.com/mankhedekar96/the-skilled-bots#readme"
+}
