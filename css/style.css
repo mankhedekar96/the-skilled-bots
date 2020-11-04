@@ -418,12 +418,16 @@ body {
 
 #contact-us .contact-info {
     padding-top: 76px;
+    overflow: hidden;
 }
 
 #contact-us .contact-text {
+    width: 100%;
+    max-width: 1000px;
     margin-left: 230px;
     background: #FAFAFA;
     border-radius: 45px;
+    padding-bottom: 150px;
 }
 
 #contact-us .contact-heading {
@@ -510,6 +514,8 @@ body {
 .input-container input{
     width: 100%;
     max-width: 341px;
+    border:none;
+    padding: 20px;
 }
 
 .input-container input::placeholder{
@@ -526,7 +532,15 @@ body {
     max-width: 722px;
     height: 155px;
     border-radius: 5px;
-    vertical-align: text-top;
+    margin-left: 100px;
+    margin-top: 20px;
+    padding: 20px;
+    border:none;
+}
+
+.text-area::placeholder{
+    font-size: 20px;
+    color: #303030;
 }
 
 /* Media Queries */
