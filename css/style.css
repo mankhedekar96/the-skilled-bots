@@ -56,6 +56,12 @@ body {
     color: #FFFFFF;
     background: #F4442E;
     border-radius: 5px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
 }
 
 #remote {
@@ -329,8 +335,8 @@ body {
     display: flex;
     width: 110%;
     flex-wrap: wrap;
-    /* flex: 33% 33% 33%; */
     justify-content: start;
+    margin-left: -20px;
 }
 
 .process-item {
@@ -515,12 +521,19 @@ body {
     width: 100%;
     max-width: 341px;
     border:none;
+    font-size: 20px;
+    color: #303030;
     padding: 20px;
 }
 
 .input-container input::placeholder{
     font-size: 20px;
     color: #303030;
+}
+
+.input-container input:focus{
+    border: 0;
+    outline: 0;
 }
 
 .contact-us-form{
@@ -533,8 +546,11 @@ body {
     height: 155px;
     margin-left: 100px;
     margin-top: 20px;
+    font-size: 20px;
+    color: #303030;
     padding: 20px;
     border:none;
+    resize: none;
 }
 
 .send-btn{
@@ -546,6 +562,11 @@ body {
 .text-area::placeholder{
     font-size: 20px;
     color: #303030;
+}
+
+.text-area:focus{
+    border: 0;
+    outline: 0;
 }
 
 /* Media Queries */
