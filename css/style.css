@@ -427,7 +427,7 @@ body {
     margin-left: 230px;
     background: #FAFAFA;
     border-radius: 45px;
-    padding-bottom: 150px;
+    padding-bottom: 50px;
 }
 
 #contact-us .contact-heading {
@@ -486,7 +486,7 @@ body {
     margin: 0 auto;
     padding: 60px;
     box-sizing: border-box;
-    border-top: 3px solid gray;
+    border-top: 3px solid #FAFAFA;
 }
 
 #footer-text .main-section div p{
@@ -536,6 +536,12 @@ body {
     margin-top: 20px;
     padding: 20px;
     border:none;
+}
+
+.send-btn{
+    display: block;
+    margin-top: 20px;
+    margin-left: 400px;
 }
 
 .text-area::placeholder{
