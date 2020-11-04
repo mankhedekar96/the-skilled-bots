@@ -468,10 +468,65 @@ body {
     display: flex;
     justify-content: space-between;
     width: 70%;
+    padding-top: 12px;
 }
 
 .middle-content .first-link {
     margin-left: 133px;
+}
+
+#footer-text {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    padding: 60px;
+    box-sizing: border-box;
+    border-top: 3px solid gray;
+}
+
+#footer-text .main-section div p{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.social-media-icons{
+    display: flex;
+    width: 10%;
+    justify-content: space-between;
+    margin-left: 5%;
+}
+
+.input-container{
+    width: 100%;
+    max-width: 722px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input-container input{
+    width: 100%;
+    max-width: 341px;
+}
+
+.input-container input::placeholder{
+    font-size: 20px;
+    color: #303030;
+}
+
+.contact-us-form{
+    padding-left: 100px;
+}
+
+.text-area{
+    width: 100%;
+    max-width: 722px;
+    height: 155px;
+    border-radius: 5px;
+    vertical-align: text-top;
 }
 
 /* Media Queries */
