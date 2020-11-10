@@ -873,8 +873,8 @@ body {
     }
     /* Why Section */
     .widget {
-        padding-left: 32px;
-        padding-right: 30px;
+        padding-left: 32px !important;
+        padding-right: 30px !important;
     }
     #why .text-headline {
         font-size: 30px;
@@ -922,5 +922,27 @@ body {
         display: block;
         width: 100%;
         margin: 80px auto;
+    }
+    #safeIt .text-headline {
+        margin-top: 20px;
+        margin-bottom: 25px;
+        font-size: 30px;
+        line-height: 36px;
+    }
+    #safeIt .teams-image-info-text {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    #safeIt .resource-item-container {
+        margin-top: 50px;
+    }
+    #safeIt .resource-item-container .resource-item {
+        display: block;
+        width: 100%;
+        margin-bottom: 55px;
+    }
+    #safeIt .resource-item-container .resource-item p {
+        font-size: 22px;
+        line-height: 26px;
     }
 }
