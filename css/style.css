@@ -140,6 +140,10 @@ body {
     border: 0.5px solid #F4442E;
 }
 
+#why .arrow {
+    margin-left: 20px;
+}
+
 .text-headline {
     margin: 40px auto;
     color: #303030;
@@ -198,6 +202,10 @@ body {
     font-size: 52px;
     line-height: 62px;
     color: #303030;
+}
+
+#how .img-block {
+    margin-top: 49px;
 }
 
 .process-list {
@@ -495,21 +503,21 @@ body {
     border-top: 3px solid #FAFAFA;
 }
 
-#footer-text .main-section div p{
+#footer-text .main-section div p {
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
 }
 
-.social-media-icons{
+.social-media-icons {
     display: flex;
     width: 10%;
     justify-content: space-between;
     margin-left: 5%;
 }
 
-.input-container{
+.input-container {
     width: 100%;
     max-width: 722px;
     display: flex;
@@ -517,30 +525,30 @@ body {
     justify-content: space-between;
 }
 
-.input-container input{
+.input-container input {
     width: 100%;
     max-width: 341px;
-    border:none;
+    border: none;
     font-size: 20px;
     color: #303030;
     padding: 20px;
 }
 
-.input-container input::placeholder{
+.input-container input::placeholder {
     font-size: 20px;
     color: #303030;
 }
 
-.input-container input:focus{
+.input-container input:focus {
     border: 0;
     outline: 0;
 }
 
-.contact-us-form{
+.contact-us-form {
     padding-left: 100px;
 }
 
-.text-area{
+.text-area {
     width: 100%;
     max-width: 722px;
     height: 155px;
@@ -549,39 +557,78 @@ body {
     font-size: 20px;
     color: #303030;
     padding: 20px;
-    border:none;
+    border: none;
     resize: none;
 }
 
-.send-btn{
+.send-btn {
     display: block;
     margin-top: 20px;
     margin-left: 400px;
 }
 
-.text-area::placeholder{
+.text-area::placeholder {
     font-size: 20px;
     color: #303030;
 }
 
-.text-area:focus{
+.text-area:focus {
     border: 0;
     outline: 0;
 }
 
 /* Media Queries */
 
-@media only screen and (min-width: 320px) and (max-width: 575px) {
+/* @media only screen and (min-width: 320px) and (max-width: 575px) {
     .widget {
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 13px;
-        padding-bottom: 13px;
+        padding: 35px;
+        margin: 0% 1.5rem;
     }
     #remote .sub-headline {
         margin-left: 0px;
         text-align: center;
-        margin-top: 65px;
+        margin-top: 0px;
+    }
+    #remote {
+        background-position: top -330px right -5px;
+    }
+    #why {
+        background-position: top 96% right -5px;
+        height: 122vh;
+    }
+    #how {
+        background-position: top 39% right -5px;
+    }
+    .process-list {
+        margin-top: 48rem;
+    }
+    .contact-us-btn {
+        width: 104px;
+        height: 38px;
+        font-size: 1rem;
+    }
+    #contact-us .contact-text {
+        margin-left: 0;
+    }
+    .contact-us-form {
+        padding-left: 0px;
+    }
+    .input-container input {
+        width: 94%;
+        max-width: 341px;
+        border: none;
+        font-size: 1.3rem;
+        padding: 15px;
+        margin: 0.5rem;
+    }
+    .text-area {
+        width: 94%;
+        font-size: 1.3rem;
+        margin: 0.5rem;
+    }
+    .send-btn {
+        text-align: center;
+        margin-left: 5rem;
     }
     .column-container {
         flex-direction: column;
@@ -596,12 +643,52 @@ body {
         padding: 0px;
     }
     #resources .top-hr {
-        width: 100%;
+        width: 40%;
     }
     #resources .text-headline-md-w-auto {
         margin: 10px 0px;
-        font-size: 30px;
-        line-height: 40px;
+        font-size: 2rem;
+        line-height: 1;
+    }
+    #contact-us .text-headline {
+        margin-bottom: 0px;
+        font-size: 2rem;
+    }
+    .headline {
+        font-size: 2rem;
+    }
+    .sub-headline {
+        font-size: 1.3rem;
+    }
+    .column-content {
+        font-size: 1.3rem;
+    }
+    .text-desc {
+        font-size: 1.3rem;
+    }
+    .text-sub-headline {
+        font-size: 1.3rem;
+        margin: 0px 0px 3rem 0px;
+    }
+    .text-headline-lg {
+        font-size: 2rem;
+        text-align: left;
+    }
+    .text-headline {
+        font-size: 2rem;
+        text-align: left;
+        line-height: 1;
+    }
+    #contact-us .heading-section {
+        font-size: 2rem;
+    }
+    .contact-heading h3 {
+        font-size: 2rem;
+        line-height: 1;
+        text-align: initial;
+    }
+    #contact-us .red-text {
+        font-size: 2rem;
     }
     #resources .resource-item-container {
         margin-top: 20px;
@@ -624,11 +711,23 @@ body {
         width: 100%;
     }
     #teams .top-hr {
-        width: 100%;
+        width: 40%;
     }
     #teams .text-headline {
         margin: 25px auto;
-        text-align: center;
+        text-align: left;
+        font-size: 2rem;
+    }
+    .text-headline-md-w-auto {
+        font-size: 2rem;
+    }
+    .text-headline-md {
+        font-size: 2rem;
+        width: 100%;
+        margin: 0;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1;
     }
     #teams .teams-image-info-text {
         text-align: center;
@@ -643,17 +742,18 @@ body {
         top: unset;
         right: unset;
         max-width: unset;
+        width: 100%;
     }
     #office .office-image-info {
         width: 100%;
     }
     #office .top-hr {
         margin-top: 35px;
-        width: 100%;
+        width: 40%;
     }
     #office .text-headline {
-        text-align: center;
-        font-size: 40px;
+        text-align: left;
+        font-size: 2rem;
         margin: 20px auto;
     }
     #office .teams-image-info-text {
@@ -664,15 +764,17 @@ body {
         padding-right: 0px;
     }
     #safeIt .top-hr {
-        width: 100%;
+        width: 40%;
     }
     #safeIt .text-headline {
-        text-align: center;
+        text-align: left;
         margin: 25px auto;
-        font-size: 40px;
+        font-size: 2rem;
+        line-height: 1;
     }
     #safeIt .teams-image-info-text {
         text-align: center;
+        font-size: 1rem;
     }
     #safeIt .resource-item-container {
         margin: 20px;
@@ -686,21 +788,102 @@ body {
         padding: 0px;
     }
     #process .top-hr {
-        width: 100%;
+        width: 40%;
     }
     #process .text-headline {
-        text-align: center;
-        margin: 20px auto;
+        text-align: left;
+        margin: 25px auto;
+        font-size: 2rem;
     }
     #process .process-items-container {
         width: 100%;
+        display: contents;
+    }
+    
+    .process-item-icon {
+        position: absolute;
+        left: -53px;
+        top: 35%;
+        z-index: 3;
     }
     #process .process-item {
         width: 100%;
-        height: auto;
-        margin-top: 20px;
         margin-bottom: 15px;
-        margin-right: 25px;
-        padding: 10px;
+        padding: 0;
+    }
+    .process-item-title {
+        width: 100%;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 34px;
+        color: #F4442E;
+        margin-left: 3rem;
+        margin-bottom: 0px;
+    }
+    .process-item-desc {
+        margin-left: 3rem;
+        padding-right: 0.5rem;
+    }
+    .process-item-number {
+        left: -49%;
+    }
+} */
+
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+    .top-hr {
+        width: 104px;
+    }
+    /* Why Section */
+    .widget {
+        padding-left: 32px;
+        padding-right: 30px;
+    }
+    #why .text-headline {
+        font-size: 30px;
+        line-height: 36px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        padding-right: 55px;
+    }
+    #why .text-desc {
+        font-size: 18px;
+        line-height: 22px;
+        padding-right: 2px;
+        padding-left: 2px;
+    }
+    #how .text-headline-lg {
+        font-size: 38px;
+        line-height: 33.3px;
+    }
+    #how .text-sub-headline {
+        margin-top: 25px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.6px;
+    }
+    #how .text-headline-md {
+        margin-top: 20px;
+        font-size: 30px;
+        line-height: 36px;
+        width: 100%;
+    }
+    #how .process-list li {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 25px;
+    }
+    #resources .text-headline-md-w-auto {
+        margin-top: 20px;
+        font-size: 30px;
+        line-height: 36px;
+    }
+    #resources .resource-item-container {
+        margin-top: 60px;
+    }
+    #resources .resource-item {
+        display: block;
+        width: 100%;
+        margin: 80px auto;
     }
 }
