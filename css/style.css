@@ -70,12 +70,12 @@ body {
     text-decoration: none;
 }
 
-#remote *{
+#remote * {
     position: relative;
     z-index: 1;
 }
 
-#remote > img{
+#remote>img {
     display: block;
     position: absolute;
     max-width: 1092px;
@@ -115,7 +115,7 @@ body {
     margin-top: 300px;
 }
 
-.column-container::after{
+.column-container::after {
     content: "";
     position: absolute;
     bottom: -50px;
@@ -326,6 +326,10 @@ body {
     width: 100%;
 }
 
+#teams .img-block {
+    margin-top: 25px;
+}
+
 .teams-image-info {
     width: 45%;
 }
@@ -362,6 +366,10 @@ body {
 
 .office-image-info {
     width: 50%;
+}
+
+#office .img-block {
+    margin-top: 25px;
 }
 
 #safeIt {
@@ -608,21 +616,21 @@ body {
     outline: 0;
 }
 
-.navigator{
+.navigator {
     position: fixed;
     top: 30%;
     z-index: 999;
     left: 50px;
 }
 
-.navigator a{
+.navigator a {
     display: block;
     text-decoration: none;
     margin: 20px auto;
     color: #F4442E;
 }
 
-.navigator a span{
+.navigator a span {
     display: inline-block;
     border-radius: 50%;
     margin-right: 10px;
@@ -631,15 +639,15 @@ body {
     background: #EBF1F6;
 }
 
-.navigator a.active span{
+.navigator a.active span {
     background: #F4442E;
 }
 
-.navigator a label{
+.navigator a label {
     display: none;
 }
 
-.navigator a.active label{
+.navigator a.active label {
     display: inline;
     border-left: 2px solid #F4442E;
     padding-left: 10px;
@@ -648,39 +656,36 @@ body {
 /* Media Queries */
 
 @media only screen and (min-width: 320px) and (max-width: 700px) {
-    .header{
+    .header {
         padding: 20px;
     }
-
-    .logo{
+    .logo {
         display: none;
     }
-
-    .company-name{
+    .company-name {
         margin-left: 0;
     }
-
     .top-hr {
         width: 104px;
     }
-    .column-container{
+    .column-container {
         flex-direction: column;
     }
-    .column-container::after{
+    .column-container::after {
         left: 0;
     }
-    .column{
+    .column {
         margin: 20px auto;
     }
-    .navigator{
+    .navigator {
         display: none;
     }
-    .process-item{
+    .process-item {
         width: 100%;
         padding: 20px;
         margin-left: 130px;
     }
-    .process-item-title{
+    .process-item-title {
         margin-bottom: 5px;
     }
     /* Why Section */
@@ -757,19 +762,75 @@ body {
         font-size: 22px;
         line-height: 26px;
     }
-    #teams .text-container{
+    #teams .text-container {
         flex-direction: column;
         padding: 0;
     }
-    .teams-image-container, .teams-image-info, .office-image-info{
+    .teams-image-container, .teams-image-info, .office-image-info {
         width: 100%;
     }
-    .office-image-container{
+    .office-image-container {
         position: static;
         width: 100%;
         margin-bottom: 50px;
     }
-    #office .top-hr{
+    #office .top-hr {
         margin-top: 0;
+    }
+    #teams .text-headline {
+        margin-top: 20px;
+        font-size: 30px;
+        line-height: 36px;
+    }
+    #teams .teams-image-info-text {
+        font-size: 16px;
+        line-height: 19.2px;
+    }
+    #office .text-headline {
+        margin-top: 20px;
+        font-size: 30px;
+        line-height: 36px;
+    }
+    #office .teams-image-info-text {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    #process .text-headline {
+        margin-top: 20px;
+        line-height: 36px;
+        font-size: 30px;
+    }
+    #contact-us .text-headline {
+        font-size: 43px;
+        line-height: 52px;
+    }
+    #contact-us .contact-text {
+        margin-left: 25px;
+    }
+    #contact-us .contact-heading h3 {
+        font-size: 38px;
+        line-height: 45.6px;
+    }
+    #contact-us .input-text {
+        margin: 30px 0px;
+    }
+    #contact-us .contact-us-form {
+        padding-left: 31px;
+        padding-right: 31px;
+    }
+    #contact-us .text-area {
+        margin-left: 31px;
+        margin-right: 31px;
+        width: 83%;
+    }
+    #contact-us .btn-block {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #contact-us .btn-block .send-btn {
+        margin-left: 0px;
     }
 }
