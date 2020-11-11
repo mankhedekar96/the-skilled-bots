@@ -201,10 +201,19 @@ body {
     color: #F4442E;
 }
 
-#how {
-    background-image: url('./../images/bg3.svg');
-    background-repeat: no-repeat;
-    background-position: 90% 80%;
+#how{
+    position: relative;
+    padding: 100px 60px;
+}
+
+#how .top-hr{
+    margin-top: 100px;
+}
+
+.skilled-bot{
+    position: absolute;
+    top: 300px;
+    right: 0;
 }
 
 .text-headline-lg {
@@ -305,21 +314,27 @@ body {
     text-align: right;
 }
 
+#teams{
+    position: relative;
+}
+
+.teams-image-container{
+    position: absolute;
+    max-width: 660px;
+    width: 50%;
+    top: 15%;
+    left: 0;
+}
+
 #teams .text-container {
     display: flex;
-    justify-content: start;
+    justify-content: end;
     padding: 0 50px;
 }
 
 #teams .top-hr {
     margin-top: 40px;
     margin-bottom: -5px;
-}
-
-.teams-image-container {
-    width: 50%;
-    max-width: 660px;
-    margin-right: 50px;
 }
 
 .teams-image-container img {
@@ -346,13 +361,14 @@ body {
     background-image: url('../images/bg-dots.svg');
     background-position: 55% 85%;
     background-repeat: no-repeat;
+    padding-top: 10%;
 }
 
-.office-image-container {
+.office-image-container{
     position: absolute;
     max-width: 660px;
     width: 50%;
-    top: 0;
+    top: 200px;
     right: 0;
 }
 
@@ -361,11 +377,11 @@ body {
 }
 
 #office .top-hr {
-    margin-top: 200px;
+    margin-top: 20px;
 }
 
 .office-image-info {
-    width: 50%;
+    width: 48%;
 }
 
 #office .img-block {
@@ -380,10 +396,10 @@ body {
 
 .process-items-container {
     display: flex;
-    width: 110%;
+    width: calc(100% - 50px);
     flex-wrap: wrap;
-    justify-content: start;
-    margin-left: -20px;
+    justify-content: space-between;
+    margin-left: 50px;
 }
 
 .process-item {
@@ -393,8 +409,9 @@ body {
     align-items: center;
     width: 33%;
     max-width: 240px;
-    margin: 25px 55px 100px 100px;
-    height: 240px;
+    min-width: 200px;
+    margin: 0px 50px 100px;
+    min-height: 240px;
     padding: 25px;
     text-align: left;
     border: 3px solid #F4442E;
@@ -432,17 +449,17 @@ body {
 .process-item-icon {
     position: absolute;
     left: -75px;
-    top: 35%;
+    top: 30%;
     z-index: 3;
 }
 
 .process-item-number {
     position: absolute;
     top: -10px;
-    left: -125px;
+    left: -100px;
     font-style: normal;
     font-weight: 600;
-    font-size: 120px;
+    font-size: 100px;
     opacity: 0.05;
     z-index: 3;
 }
@@ -681,9 +698,10 @@ body {
         display: none;
     }
     .process-item {
-        width: 100%;
+        width: calc(100% - 100px);
         padding: 20px;
-        margin-left: 130px;
+        margin-left: 100px;
+        margin-bottom: 60px;
     }
     .process-item-title {
         margin-bottom: 5px;
@@ -692,6 +710,7 @@ body {
     .widget {
         padding-left: 32px !important;
         padding-right: 30px !important;
+        min-height: 630px;
     }
     #why .text-headline {
         font-size: 30px;
@@ -766,14 +785,21 @@ body {
         flex-direction: column;
         padding: 0;
     }
-    .teams-image-container, .teams-image-info, .office-image-info {
+    .teams-image-container, .teams-image-info, .office-image-info, .column, .column-header, .column-content {
         width: 100%;
     }
-    .office-image-container {
+    .office-image-container, .teams-image-container{
         position: static;
         width: 100%;
         margin-bottom: 50px;
+        padding: 0;
     }
+
+    #office{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
     #office .top-hr {
         margin-top: 0;
     }
@@ -832,5 +858,24 @@ body {
     }
     #contact-us .btn-block .send-btn {
         margin-left: 0px;
+    }
+
+    #how{
+        position: relative;
+        padding: 60px 30px;
+    }
+
+    #how .top-hr{
+        margin-top: 10px;
+    }
+
+    .skilled-bot{
+        position: static;
+        width: 100%;
+    }
+
+    .process-items-container {
+        width: 100%;
+        margin-left: 0;
     }
 }
