@@ -529,27 +529,35 @@ body {
     padding-top: 44px;
 }
 
-#footer-text .main-section {
+#footer .main-section {
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .first-text {
-    width: 10%;
+    width: 20%;
+}
+
+.first-text .company-name{
+    margin-left: 20px;
 }
 
 .middle-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 70%;
-    padding-top: 12px;
+    padding-top: 10px;
 }
 
-.middle-content .first-link {
-    margin-left: 133px;
+.footer-link{
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #303030;
 }
 
-#footer-text {
+#footer {
     width: 100%;
     max-width: 1200px;
     background-color: #FFFFFF;
@@ -559,11 +567,29 @@ body {
     border-top: 3px solid #FAFAFA;
 }
 
-#footer-text .main-section div p {
+#footer .main-section div p {
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
+}
+
+.copyright-section{
+    width: 60%;
+    margin: 60px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.copyright-link{
+    color: #F4442E;
+    font-family: 'Blinker';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
 }
 
 .social-media-icons {
@@ -676,42 +702,53 @@ body {
     .header {
         padding: 20px;
     }
+
     .logo {
         display: none;
     }
+
     .company-name {
         margin-left: 0;
     }
+
     .top-hr {
         width: 104px;
     }
+
     .column-container {
         flex-direction: column;
     }
+
     .column-container::after {
         left: 0;
     }
+
     .column {
         margin: 20px auto;
     }
+
     .navigator {
         display: none;
     }
+
     .process-item {
         width: calc(100% - 100px);
         padding: 20px;
         margin-left: 100px;
         margin-bottom: 60px;
     }
+
     .process-item-title {
         margin-bottom: 5px;
     }
+
     /* Why Section */
     .widget {
         padding-left: 32px !important;
         padding-right: 30px !important;
         min-height: 630px;
     }
+
     #why .text-headline {
         font-size: 30px;
         line-height: 36px;
@@ -719,75 +756,91 @@ body {
         margin-bottom: 40px;
         padding-right: 55px;
     }
+
     #why .text-desc {
         font-size: 18px;
         line-height: 22px;
         padding-right: 2px;
         padding-left: 2px;
     }
+
     #how .text-headline-lg {
         font-size: 38px;
         line-height: 33.3px;
     }
+    
     #how .text-sub-headline {
         margin-top: 25px;
         font-size: 18px;
         font-weight: 400;
         line-height: 21.6px;
     }
+    
     #how .text-headline-md {
         margin-top: 20px;
         font-size: 30px;
         line-height: 36px;
         width: 100%;
     }
+
     #how .process-list li {
         font-size: 16px;
         line-height: 19px;
         margin-bottom: 25px;
     }
+
     #resources .text-headline-md-w-auto {
         margin-top: 20px;
         font-size: 30px;
         line-height: 36px;
     }
+
     #resources .resource-item-container {
         margin-top: 60px;
     }
+
     #resources .resource-item {
         display: block;
         width: 100%;
         margin: 80px auto;
     }
+
     #safeIt .text-headline {
         margin-top: 20px;
         margin-bottom: 25px;
         font-size: 30px;
         line-height: 36px;
     }
+
     #safeIt .teams-image-info-text {
         font-size: 16px;
         line-height: 19px;
     }
+
     #safeIt .resource-item-container {
         margin-top: 50px;
     }
+
     #safeIt .resource-item-container .resource-item {
         display: block;
         width: 100%;
         margin-bottom: 55px;
     }
+
     #safeIt .resource-item-container .resource-item p {
         font-size: 22px;
         line-height: 26px;
     }
+
     #teams .text-container {
         flex-direction: column;
         padding: 0;
     }
+
     .teams-image-container, .teams-image-info, .office-image-info, .column, .column-header, .column-content {
         width: 100%;
     }
+
     .office-image-container, .teams-image-container{
         position: static;
         width: 100%;
@@ -803,52 +856,64 @@ body {
     #office .top-hr {
         margin-top: 0;
     }
+
     #teams .text-headline {
         margin-top: 20px;
         font-size: 30px;
         line-height: 36px;
     }
+
     #teams .teams-image-info-text {
         font-size: 16px;
         line-height: 19.2px;
     }
+
     #office .text-headline {
         margin-top: 20px;
         font-size: 30px;
         line-height: 36px;
     }
+
     #office .teams-image-info-text {
         font-size: 16px;
         line-height: 19px;
     }
+
     #process .text-headline {
         margin-top: 20px;
         line-height: 36px;
         font-size: 30px;
     }
+
     #contact-us .text-headline {
         font-size: 43px;
         line-height: 52px;
     }
+
     #contact-us .contact-text {
         margin-left: 25px;
     }
+
     #contact-us .contact-heading h3 {
         font-size: 38px;
         line-height: 45.6px;
     }
+
     #contact-us .input-text {
         margin: 30px 0px;
     }
+
     #contact-us .contact-us-form {
         padding-left: 31px;
         padding-right: 31px;
     }
+
     #contact-us .text-area {
         margin-left: 31px;
         margin-right: 31px;
         width: 83%;
     }
+
     #contact-us .btn-block {
         width: 100%;
         text-align: center;
@@ -856,6 +921,7 @@ body {
         align-items: center;
         justify-content: center;
     }
+
     #contact-us .btn-block .send-btn {
         margin-left: 0px;
     }
@@ -877,5 +943,47 @@ body {
     .process-items-container {
         width: 100%;
         margin-left: 0;
+    }
+
+    .middle-content{
+        width: 100%;
+        margin: 60px auto 0;
+        order: 3;
+    }
+
+    .first-text{
+        width: 80%;
+    }
+
+    .social-media-icons{
+        width: 20%;
+        margin-left: 0;
+    }
+
+    .main-section .logo {
+        display: block;
+    }
+
+    .copyright-section{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .copyright-link:nth-child(2), .copyright-link:nth-child(3){
+        width: 50%;
+    }
+
+    .copyright-link:nth-child(1){
+        order: 3;
+        width: 100%;
+    }
+
+    .copyright-link{
+        margin: 40px auto 0;
+    }
+
+    #footer{
+        padding-left: 32px !important;
+        padding-right: 30px !important;
     }
 }
