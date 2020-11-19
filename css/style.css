@@ -107,6 +107,17 @@ body {
 }
 
 .illustration-container{
+    display: block;
+    width: 100%;
+    min-height: 700px;
+    max-height: 750px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.illustration-bg{
     position: absolute !important;
     width: 60%;
     height: 90vh;
@@ -119,7 +130,7 @@ body {
     z-index: 0;
 }
 
-.illustration-container img{
+.illustration-bg img{
     position: absolute !important;
     top: 80px;
     display: block;
@@ -803,7 +814,7 @@ body {
         line-height: 22px;
     }
 
-    .illustration-container{
+    .illustration-bg{
         position: absolute !important;
         width: 65%;
         min-height: 300px;
@@ -815,7 +826,7 @@ body {
         border-radius: 0 0 0 45px;
     }
 
-    .illustration-container img{
+    .illustration-bg img{
         position: absolute !important;
         top: 110px;
         right: -30px;
