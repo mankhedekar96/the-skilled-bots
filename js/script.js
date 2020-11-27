@@ -48,7 +48,7 @@ window.addEventListener('load', function () {
                 if (sectionIndex < (sections.length - 1)) sectionIndex++;
                 setTimeout(() => {
                     scrolling = false;
-                }, 500);
+                }, 666);
             }
         } else {
             // upscroll code
@@ -58,7 +58,7 @@ window.addEventListener('load', function () {
                 if (sectionIndex > 0) sectionIndex--;
                 setTimeout(() => {
                     scrolling = false;
-                }, 500);
+                }, 666);
             }
         }
     }, false);
