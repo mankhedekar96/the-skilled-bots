@@ -1,4 +1,3 @@
-let lastScrollTop = 0;
 let sections = ['remote', 'why', 'how', 'resources', 'teams', 'office', 'safeIt', 'process', 'contact-us', 'footer'];
 let sectionIndex = 0;
 let scrolling = false;
@@ -19,11 +18,29 @@ function jump(h) {
     window.scrollTo(0, top);
 }
 
+function detectMouseWheelDirection( e )
+{
+    var delta = null,
+        direction = false
+    ;
+    if ( !e ) { // if the event is not provided, we get it from the window object
+        e = window.event;
+    }
+    if ( e.wheelDelta ) { // will work in most cases
+        delta = e.wheelDelta / 60;
+    } else if ( e.detail ) { // fallback for Firefox
+        delta = -e.detail / 2;
+    }
+    if ( delta !== null ) {
+        direction = delta > 0 ? 'up' : 'down';
+    }
+
+    return direction;
+}
+
 window.addEventListener('load', function () {
-    window.addEventListener('scroll', function (event) {
-        event.preventDefault();
-        let st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
-        if (st > lastScrollTop) {
+    document.addEventListener('DOMMouseScroll', function (event) {
+       if (detectMouseWheelDirection(event) === 'down') {
             // downscroll code
             if (!window.mobileCheck() && !scrolling) {
                 scrolling = true;
@@ -31,7 +48,7 @@ window.addEventListener('load', function () {
                 if (sectionIndex < (sections.length - 1)) sectionIndex++;
                 setTimeout(() => {
                     scrolling = false;
-                }, 1000);
+                }, 500);
             }
         } else {
             // upscroll code
@@ -41,14 +58,15 @@ window.addEventListener('load', function () {
                 if (sectionIndex > 0) sectionIndex--;
                 setTimeout(() => {
                     scrolling = false;
-                }, 1000);
+                }, 500);
             }
         }
-        lastScrollTop = st <= 0 ? 0 : st;
+    }, false);
 
+    window.addEventListener('scroll', function (event) {
         let navOptions = document.querySelectorAll('#navigator a');
         navOptions.length && navOptions.forEach(el => el.setAttribute('class', ''))
         let navOption = document.getElementById('navOption' + (parseInt(window.pageYOffset / vh(95)) + 1));
         navOption && navOption.setAttribute('class', 'active');
-    }, false);
+    },false);
 }, false);
