@@ -443,7 +443,7 @@ body {
     width: 33%;
     max-width: 240px;
     min-width: 200px;
-    margin: 0px 50px 100px;
+    margin: 0px 50px 100px auto;
     min-height: 240px;
     padding: 25px;
     text-align: left;
